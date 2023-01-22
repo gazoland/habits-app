@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Will only consider the element for the box's size, ignoring the padding value */
+}
+
+body {
+  background-color: rgb(18, 18, 20);
+  color: white;
+
+  height: 100vh;
+}
+
+/*
+body * {
+  border: 1px solid red;
+  margin: 20px;
+  padding: 10px; /* Space between the element itself and the border * /
+
+}
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+
+  position: fixed;
+  width: 100%;
+}
+
+button {
+  padding: 16px 24px; /* Xpx -> both width + height. Xpx Ypx -> height width */
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: aliceblue;
+
+  display: flex; /* Default: inline */
+  align-items: center;
+  gap: 12px;
+
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+}
+
+#form-habits-board {
+  display: flex;
+  padding: 148px 48px 96px;
+
+  /* width: fit-content; */
+}
+
+.habits {
+  margin-right: 32px;
+  margin-top: 58px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+.habit {
+  height: 64px;
+  width: 40px;
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  align-items: center;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #A1A1AA;
+
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none; /* Some browsers need this vendor-prefix "-webkit-" to understand the appearence: none */
+
+  width: 64px;
+  height: 64px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  border: 2px solid #343438;
+  border-radius: 12px;
+
+  background: #17171a;
+}
+
+input:checked {
+  border: 2px solid #a78bfa;
+  background: #8b5cf6;
+}
+
+/* If the device screen has up to 570px, then the following rules apply*/
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
