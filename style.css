@@ -11,15 +11,6 @@ body {
   height: 100vh;
 }
 
-/*
-body * {
-  border: 1px solid red;
-  margin: 20px;
-  padding: 10px; /* Space between the element itself and the border * /
-
-}
-*/
-
 header {
   display: flex;
   align-items: center;
@@ -35,7 +26,7 @@ header {
 }
 
 button {
-  padding: 16px 24px; /* Xpx -> both width + height. Xpx Ypx -> height width */
+  padding: 16px 24px;
   border-radius: 8px;
   border: 1px solid #8b5cf6;
   background-color: transparent;
