@@ -11,7 +11,7 @@ function addDay () {
     let todayMonth = new Date().getMonth() + 1
 
     if (todayDay < 10) {
-      todayDay = '0' + String(todayDate)
+      todayDay = '0' + String(todayDay)
     }
 
     if (todayMonth < 10) {
