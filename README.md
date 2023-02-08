@@ -20,9 +20,9 @@ Habits is a web application for registering daily activities and keeping track o
 
 This project was developed using:
 
-- HTML e CSS
+- HTML and CSS
 - JavaScript
-- Git e Github
+- Git and Github
 - Figma
 
 ## Project
